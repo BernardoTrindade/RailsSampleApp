@@ -4,7 +4,7 @@ describe "AuthenticationPages" do
 
   subject { page }
 
-  describe "signin page" do
+  describe "signin" do
     before { visit signin_path }
 
     describe "with invalid information" do
