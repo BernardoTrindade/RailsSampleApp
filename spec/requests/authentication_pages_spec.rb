@@ -43,6 +43,11 @@ describe "AuthenticationPages" do
 
       describe "in the Users controller" do
 
+        describe "visiting the user index" do
+          before { visit users_path }
+          it { should have_selector('title', text: 'Sign in') }
+        end
+
         describe "when attempting to visit a protected page" do
           before do
             visit edit_user_path(user)
